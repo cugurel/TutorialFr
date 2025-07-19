@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/adidas.png" style="width: 40px; height: 30px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="product.html">Ürünler</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Kategoriler
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Kadın</a></li>
+                            <li><a class="dropdown-item" href="#">Erkek</a></li>
+                            <li><a class="dropdown-item" href="#">Çocuk</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" aria-disabled="true">Şubeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" aria-disabled="true">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" aria-disabled="true">İletişim</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Ara</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</body>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-6">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">E-Posta</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputName">İsim Soyisim</label>
+                    <input type="text" class="form-control" id="exampleInputName">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleMessage">Mesajınız</label>
+                    <textarea class="form-control" rows="10" id="exampleMessage"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary my-3">Gönder</button>
+            </form>
+        </div>
+        <div class="col-6">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.353276363362!2d27.136448075581015!3d38.43330817395449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd98ca8e9c311%3A0x377d26e65ff7ecac!2sKariyer%20Akademi!5e0!3m2!1str!2str!4v1752913195668!5m2!1str!2str"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="footer mt-auto py-3 bg-body-tertiary border-top mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h5>Hakkımızda</h5>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin
+                    literature from 45 BC, making it over 2000 years old.</p>
+                <h5>Adress</h5>
+                <p>Bornova/İZMİR</p>
+            </div>
+            <div class="col-4">
+                <h5 class="mx-4">Menü</h5>
+                <ul style="list-style-type: none;">
+                    <li><a>Anasayfa</a></li>
+                    <li><a>Ürünler</a></li>
+                    <li><a>Kategoriler</a></li>
+                    <li><a>Şubeler</a></li>
+                    <li><a>Hakkımızda</a></li>
+                    <li><a>İletişim</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h5>İletişim</h5>
+                <p>Telefon: 0232 123 45 67</p>
+                <p>Email:cugurel7@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+</script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault(); // Sayfa yenilenmesini engelle
+
+        const email = document.getElementById('exampleInputEmail1').value.trim();
+        const name = document.getElementById('exampleInputName').value.trim();
+        const message = document.getElementById('exampleMessage').value.trim();
+
+        if (!email || !name || !message) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Uyarı',
+                text: 'Lütfen tüm alanları doldurunuz.'
+            });
+            return;
+        }
+
+        // Burada formu sunucuya gönderebilirsin (fetch/Ajax vs.)
+        Swal.fire({
+            icon: 'success',
+            title: 'Teşekkürler!',
+            text: 'Form başarıyla gönderildi.'
+        });
+
+        // İstersen formu temizle
+        document.getElementById('contactForm').reset();
+    });
+</script>
+
+</html>
