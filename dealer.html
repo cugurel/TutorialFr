@@ -7,8 +7,6 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -43,13 +41,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="dealer.html" aria-disabled="true">Şubeler</a>
+                        <a class="nav-link active" href="dealer.html" aria-disabled="true">Şubeler</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html" aria-disabled="true">Hakkımızda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html" aria-disabled="true">İletişim</a>
+                        <a class="nav-link" href="contact.html" aria-disabled="true">İletişim</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -60,36 +58,50 @@
         </div>
     </nav>
 </body>
-<div class="container my-5">
-    <div class="row">
-        <div class="col-6">
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">E-Posta</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
+<div class="container">
+    <div class="row my-5">
+        <div class="col-4">
 
-                <div class="form-group">
-                    <label for="exampleInputName">İsim Soyisim</label>
-                    <input type="text" class="form-control" id="exampleInputName">
-                </div>
 
-                <div class="form-group">
-                    <label for="exampleMessage">Mesajınız</label>
-                    <textarea class="form-control" rows="10" id="exampleMessage"></textarea>
+            <div class="card" style="width: 18rem;">
+                <img src="img/izmir.jpg" height="300px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">İzmir Şubemiz</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">İletişim</a>
                 </div>
+            </div>
 
-                <button type="submit" class="btn btn-primary my-3">Gönder</button>
-            </form>
+
         </div>
-        <div class="col-6">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.353276363362!2d27.136448075581015!3d38.43330817395449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd98ca8e9c311%3A0x377d26e65ff7ecac!2sKariyer%20Akademi!5e0!3m2!1str!2str!4v1752913195668!5m2!1str!2str"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="col-4">
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/istanbul.jpg" height="300px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">İstanbul Şubemiz</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">İletişim</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="img/ankara.jpg" height="300px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ankara Şubemiz</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">İletişim</a>
+                </div>
+            </div>
+
+
         </div>
     </div>
-
 </div>
 
 
@@ -125,34 +137,6 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
-</script>
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-        e.preventDefault(); // Sayfa yenilenmesini engelle
-
-        const email = document.getElementById('exampleInputEmail1').value.trim();
-        const name = document.getElementById('exampleInputName').value.trim();
-        const message = document.getElementById('exampleMessage').value.trim();
-
-        if (!email || !name || !message) {
-            Swal.fire({
-                icon: 'warning',
-                title: 'Uyarı',
-                text: 'Lütfen tüm alanları doldurunuz.'
-            });
-            return;
-        }
-
-        // Burada formu sunucuya gönderebilirsin (fetch/Ajax vs.)
-        Swal.fire({
-            icon: 'success',
-            title: 'Teşekkürler!',
-            text: 'Form başarıyla gönderildi.'
-        });
-
-        // İstersen formu temizle
-        document.getElementById('contactForm').reset();
-    });
 </script>
 
 </html>
